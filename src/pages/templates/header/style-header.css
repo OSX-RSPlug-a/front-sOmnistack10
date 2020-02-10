@@ -1,0 +1,43 @@
+
+header {
+    position: absolute;
+    left: 0;
+    margin: 15% 0 0 0;
+}
+
+.outline {
+    position: absolute;
+    background: #000000;
+    padding: 1.25em 2em;
+    outline: 2px solid white;
+    outline-offset: -10px;
+    transform: rotate(-90deg) scaleX(1);
+    transform-origin: top left;
+    color: white;
+    width: 220px;
+    left: 0;
+    font-family:'Russo One', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    font-weight: bold;
+  }
+
+
+  @media screen and (max-width: 450px){
+    header {
+        position: relative;
+        display: flex;
+        margin: 0 0 0 0;
+        width: 100%;
+        padding: 0 0 1% 1%;
+    }
+
+    .outline {
+        position: none;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        transform: rotate(0deg) scaleX(1);
+    } 
+  }
